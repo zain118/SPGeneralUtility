@@ -33,9 +33,6 @@ namespace TestingApp
             {
                 try
                 {
-                    //if (doc.FileSystemObjectType == FileSystemObjectType.File) //Field or Property "FileAttachement not found."
-                    //{
-                    // get the file
                     Microsoft.SharePoint.Client.File file = doc.File;
                     srcContext.Load(file);
                     srcContext.ExecuteQuery();
